@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    border: 2px solid #989898;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input{
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.btns{
+    text-align: center;
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: #2F2F2F;
+    cursor: pointer;
+}
+
+.btn-top{
+    background-color: #989898;
+    color: black;
+}
+
+.btn-oper{
+    background-color: #E99106;
+}
