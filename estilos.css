@@ -5,6 +5,7 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+
 .container{
     border: 2px solid #989898;
     border-radius: 10px;
@@ -18,9 +19,6 @@ input{
     color: white;
     font-size: 30px;
     cursor: pointer;
-}
-.btns{
-    text-align: center;
 }
 
 button{
