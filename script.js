@@ -16,12 +16,18 @@ function deleteLastCharacter() {
 }
 
 function appendToInput(value) {
+    // Si el valor es una coma y ya hay una coma en el input, no hacemos nada
+    if (value === ',' && input.value.includes(',')) {
+        return;
+    }
     input.value += value;
 }
 
 function calculateResult() {
     try {
-        input.value = eval(input.value);
+        // Reemplazar comas por puntos para evaluar la expresión correctamente
+        const expression = input.value.replace(/,/g, '.');
+        input.value = eval(expression).toLocaleString(); // Mostrar resultado con comas
     } catch (error) {
         input.value = 'Error';
     }
@@ -69,5 +75,5 @@ document.querySelector('.btn-top:nth-child(2)').addEventListener('click', () => 
 
 // Evento del botón % (percentage)
 document.querySelector('.btn-top:nth-child(3)').addEventListener('click', () => {
-        calculatePercentage();
+    calculatePercentage();
 });
